@@ -8,8 +8,6 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 RUN apt-get install -y nodejs
 
-RUN ln -s "$(which nodejs)" /usr/bin/node
-
 ADD package.json package.json
 RUN npm install --no-optional
 
