@@ -1,7 +1,7 @@
 {
-  "name": "kustomer",
+  "name": "blog-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blog API",
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
