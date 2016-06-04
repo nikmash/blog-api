@@ -10,6 +10,15 @@
 | /comments          | POST       | Creates a new comment       | post_id, name, text                       | NO                     |
 | /comments/:post_id | GET        | Gets all comments of a post | post_id                                   | NO                     |
 
+# Running Instructions
+Requirements:
+  - MongoDB running on localhost on port 27017
+  - Node v6.2.x
+
+Make sure to do an `npm install`!
+
+To Run: `npm start`
+To Test: `npm test`
 
 # Design Information
 
