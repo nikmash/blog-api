@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-RUN apt-get install nodejs
+RUN apt-get install -y nodejs
 
 RUN ln -s "$(which nodejs)" /usr/bin/node
 
