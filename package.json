@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "ENV=Test ./node_modules/.bin/mocha ./src/test"
+    "server": "ENV=server node src/server.js",
+    "test_server": "ENV=servertest ./node_modules/.bin/mocha ./src/test",
+    "test": "ENV=test ./node_modules/.bin/mocha ./src/test"
   },
   "author": "Nikhil Mashettiwar",
   "license": "ISC",

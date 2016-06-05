@@ -6,6 +6,6 @@ ADD package.json package.json
 RUN npm install --no-optional
 
 ADD . .
-CMD npm start
+CMD npm run server
 
 EXPOSE 5000

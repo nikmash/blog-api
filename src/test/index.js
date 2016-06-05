@@ -19,7 +19,12 @@ describe('REST API', function() {
       db = mongoose.connection.db
       return done()
     }
-    db = mongoose.connect(config.database_test, done)
+    if (process.env.ENV == test) {
+        db = mongoose.connect(config.database_test, done)
+    } else if (process.env.ENV == testserver) {
+      db = mongoose.connect(config.database_server_test, done)
+    }
+
   })
 
   describe('POST /authors', function() {
